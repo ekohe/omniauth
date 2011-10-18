@@ -58,7 +58,7 @@ module OmniAuth
       end
 
       def request_phase
-        options[:scope] ||= 'publish_feed'
+        options[:scope] ||= 'publish_feed photo_upload status_update publish_blog publish_checkin publish_share publish_comment'
         super
       end
 
